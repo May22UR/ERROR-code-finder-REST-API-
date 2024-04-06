@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error Code Finder</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<center>
+	<div class="container">
+		<h1>Error Code Finder</h1>
+		<form id="error-code-form">
+			<label for="error-code-input">Enter HTTP Error Code : </label>
+			<input type="text" id="error-code-input" name="error-code" required>
+			<button type="button" onclick="getErrorMeaning()"> Get </button>
+		</form>
+		<div id="error-info">
+			<p id="error-code-placeholder" style="display: none;">Error Code: </p>
+			<p id="error-message-placeholder" style="display: none;">Error Message: </p>
+		</div>
+	</div>
+
+	<script src="{% static 'script.js' %}"></script>
+
+<p>Developed by: Mayur More (Enrollment Number: DJJAN24117)</p>
+
+<center>
+</body>
+</html>
