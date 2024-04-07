@@ -40,6 +40,7 @@ It allows users to retrieve the meaning of various error codes within the HTTP s
           GET /api/error-code/<code>/
       ```
   - Replace <code> with the desired error code.
+    
 # Technologies Used
    - Django: Python web framework used to build the REST API.
    - Django Rest Framework (DRF): Django extension for building RESTful APIs.
